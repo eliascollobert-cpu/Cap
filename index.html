@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cap — ton coach de lifemaxxing · liste d'attente</title>
+<meta name="description" content="Cap transforme tes journées en missions : un Grand Cap, un suivi du sommeil, un plan pour arrêter ce qui te freine et un héros qui évolue. Rejoins la liste d'attente de la bêta.">
+<meta name="theme-color" content="#0A0D2B">
+<meta property="og:title" content="Cap — ta vie, en mode jeu">
+<meta property="og:description" content="Rejoins la liste d'attente de la bêta de Cap.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E">
+<style>
+
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:ui-rounded,'SF Pro Rounded','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-weight:500;background:#0A0D2B;color:#fff;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.sora{font-family:ui-rounded,'SF Pro Rounded','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1.08}
+a{color:#9CC3FF}
+.bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(60% 40% at 15% 8%,rgba(124,92,255,.5),transparent 70%),radial-gradient(55% 40% at 90% 70%,rgba(255,92,160,.28),transparent 70%),linear-gradient(170deg,#0A0D2B 0%,#1B1B6B 60%,#2A2478 100%)}
+.wrap{max-width:560px;margin:0 auto;padding:0 20px}
+.hero{padding:max(28px,env(safe-area-inset-top)) 0 36px;text-align:center}
+.badge{display:inline-block;background:rgba(255,213,74,.16);color:#FFD54A;border:1.5px solid rgba(255,213,74,.45);border-radius:99px;padding:7px 16px;font-weight:700;font-size:14px;margin-bottom:18px}
+.mas{display:flex;justify-content:center;margin:2px 0 6px;filter:drop-shadow(0 24px 30px rgba(0,0,0,.4))}
+h1{font-size:clamp(40px,11.5vw,60px);margin:6px 0 14px}
+h1 span{color:#FFD54A}
+.lead{font-size:18px;color:rgba(255,255,255,.88);max-width:480px;margin:0 auto 22px}
+.box{background:#fff;color:#16124A;border-radius:26px;padding:20px 18px 16px;text-align:left;box-shadow:0 30px 70px -20px rgba(0,0,0,.6)}
+.box label.t{display:block;font-weight:700;font-size:15px;margin-bottom:8px}
+.box input[type=email]{width:100%;font:inherit;font-size:17px;padding:15px 16px;border-radius:16px;border:2px solid #D9DCF2;background:#F4F6FF;color:#16124A;outline:none}
+.box input[type=email]:focus{border-color:#5B4BFF;background:#fff}
+.consent{display:flex;gap:11px;align-items:flex-start;margin:14px 0 4px;font-size:13.5px;line-height:1.4;color:#3B3870}
+.consent input{width:22px;height:22px;flex:none;margin-top:1px;accent-color:#5B4BFF}
+.btn{width:100%;margin-top:14px;font:inherit;font-weight:800;font-size:18px;border:0;border-radius:18px;padding:17px 14px;color:#fff;background:linear-gradient(135deg,#5B4BFF,#A25BFF);box-shadow:0 14px 30px -12px rgba(91,75,255,.9);cursor:pointer}
+.btn:disabled{opacity:.65;cursor:default}
+.btn:active{transform:scale(.98)}
+.msg{margin-top:12px;font-size:15px;font-weight:700;min-height:22px}
+.msg.err{color:#C62850}
+.msg.ok{color:#0E8F63}
+.small{font-size:13px;color:#6A6A9A;margin-top:10px;text-align:center}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+section{padding:34px 0}
+h2{font-size:clamp(28px,8vw,38px);text-align:center;margin-bottom:8px}
+.sub{text-align:center;color:rgba(255,255,255,.8);margin-bottom:22px}
+.grid{display:grid;gap:12px}
+.card{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.16);border-radius:22px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.card .e{font-size:30px;line-height:1}
+.card h3{font-size:18px;margin-bottom:3px}
+.card p{font-size:15px;color:rgba(255,255,255,.82)}
+.forms{display:flex;gap:10px;overflow-x:auto;padding:4px 20px 14px;margin:0 -20px;scroll-snap-type:x proximity}
+.forms::-webkit-scrollbar{display:none}
+.form{flex:0 0 112px;text-align:center;scroll-snap-align:start}
+.form .fs{height:112px;display:grid;place-items:center}
+.form b{display:block;font-size:14px}
+.form small{color:rgba(255,255,255,.65);font-size:12px}
+details{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.16);border-radius:18px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';float:right;font-weight:800;color:#FFD54A}
+details[open] summary::after{content:'–'}
+details p{margin-top:10px;font-size:15px;color:rgba(255,255,255,.85)}
+.cta2{text-align:center}
+.cta2 a.btn{display:block;text-decoration:none;text-align:center}
+footer{padding:26px 0 calc(34px + env(safe-area-inset-bottom));font-size:13px;color:rgba(255,255,255,.62)}
+footer h3{font-size:15px;color:#fff;margin:14px 0 4px}
+footer p{margin-bottom:8px}
+.mascot{overflow:visible}
+.mascot *{transform-box:fill-box}
+.m-root{transform-box:view-box;transform-origin:60px 114px}
+.m-eyes{transform-origin:center;animation:blink 5.2s infinite}
+.m-ant{transform-box:view-box;transform-origin:60px 20px;animation:wig 3.6s ease-in-out infinite}
+.m-arm{transform-box:view-box}
+.m-arm.l{transform-origin:18px 78px}.m-arm.r{transform-origin:102px 78px}
+.live{animation:bob 2.8s ease-in-out infinite}
+.m-aura{transform-box:view-box;transform-origin:60px 62px;animation:aura 16s linear infinite}
+.m-orb{animation:orbf 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes blink{0%,91%,100%{transform:scaleY(1)}93.5%{transform:scaleY(.08)}96%{transform:scaleY(1)}}
+@keyframes wig{0%,100%{transform:rotate(0)}30%{transform:rotate(7deg)}60%{transform:rotate(-6deg)}}
+@keyframes aura{to{transform:rotate(360deg)}}
+@keyframes orbf{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A3AF2"></stop><stop offset="1" stop-color="#A25BFF"></stop></linearGradient><linearGradient id="lg-sunset" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A3D"></stop><stop offset="1" stop-color="#FF4D8D"></stop></linearGradient><linearGradient id="lg-ocean" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00B4DB"></stop><stop offset="1" stop-color="#3D6DF2"></stop></linearGradient><linearGradient id="lg-forest" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2EC27E"></stop><stop offset="1" stop-color="#0E9F8E"></stop></linearGradient><linearGradient id="lg-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD54A"></stop><stop offset="1" stop-color="#E08A00"></stop></linearGradient><linearGradient id="lg-steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6E7FA0"></stop><stop offset="1" stop-color="#AEBCD6"></stop></linearGradient><linearGradient id="lg-sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4FC3FF"></stop><stop offset="1" stop-color="#8D7BFF"></stop></linearGradient><linearGradient id="lg-ember" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF4D2E"></stop><stop offset="1" stop-color="#FFB300"></stop></linearGradient><linearGradient id="lg-crystal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38D9FF"></stop><stop offset="1" stop-color="#6C7BFF"></stop></linearGradient><linearGradient id="lg-ice" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7FD3FF"></stop><stop offset="1" stop-color="#5B8CFF"></stop></linearGradient><linearGradient id="lg-nebula" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B1646"></stop><stop offset="0.55" stop-color="#6A2BD9"></stop><stop offset="1" stop-color="#FF4D9D"></stop></linearGradient><linearGradient id="lg-eclipse" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0A1C"></stop><stop offset="1" stop-color="#34227A"></stop></linearGradient><linearGradient id="lg-maxx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD54A"></stop><stop offset="0.55" stop-color="#FF4D8D"></stop><stop offset="1" stop-color="#7C4DFF"></stop></linearGradient><clipPath id="bclip"><rect x="10" y="16" width="100" height="98" rx="38"></rect></clipPath><radialGradient id="corona" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#FFD36B" stop-opacity=".55"></stop><stop offset="1" stop-color="#FFD36B" stop-opacity="0"></stop></radialGradient></defs></svg>
+<main class="wrap">
+<header class="hero">
+  <span class="badge">🚧 Bêta bientôt ouverte</span>
+  <div class="mas" aria-hidden="true"><svg class="mascot live" data-sz="300" data-cls="live" data-mood="cheer" data-base="cheer" data-fm="capito" style="width:300px;height:309px;max-width:none;overflow:visible" viewBox="0 0 120 124" aria-hidden="true"><g class="m-root"><ellipse cx="44" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><ellipse cx="76" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><g class="m-ant"><path d="M60 1 71 23 60 17 49 23z" fill="#fff"/></g><rect x="10" y="16" width="100" height="98" rx="38" fill="url(#lg)"/><ellipse cx="60" cy="38" rx="32" ry="13" fill="#fff" opacity=".13"/><g class="m-arm l" style="transform:rotate(135deg)"><ellipse cx="9" cy="90" rx="8" ry="12.5" fill="#7A55F7"/></g><g class="m-arm r" style="transform:rotate(-135deg)"><ellipse cx="111" cy="90" rx="8" ry="12.5" fill="#7A55F7"/></g><path d="M30 66q12-17 24 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><path d="M66 66q12-17 24 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="26" cy="83" r="7" fill="#FF8FB1" opacity="0.7"/><circle cx="94" cy="83" r="7" fill="#FF8FB1" opacity="0.7"/><g class="m-mouth"><path d="M44 80Q60 106 76 80z" fill="#1B1646"/><ellipse cx="60" cy="92" rx="8" ry="4.5" fill="#FF6B8A"/></g><path d="M12 22l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFD36B"/><path d="M106 40l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#FFD36B"/></g></svg></div>
+  <h1>Ta vie, <span>en mode jeu.</span></h1>
+  <p class="lead">Cap transforme tes journées en missions : un Grand Cap qui te guide, ton sommeil à suivre, des habitudes à lâcher et un héros qui évolue avec toi.</p>
+  <form class="box" id="wl" novalidate>
+    <label class="t" for="email">Rejoins la liste d'attente</label>
+    <input type="email" id="email" name="email" inputmode="email" autocomplete="email" placeholder="ton@email.com" required aria-describedby="msg">
+    <div class="hp" aria-hidden="true"><label>Ne pas remplir<input type="text" name="website" id="website" tabindex="-1" autocomplete="off"></label></div>
+    <label class="consent"><input type="checkbox" id="consent" required><span>Je souhaite être prévenu(e) par e-mail de l'ouverture de la bêta de Cap, et j'ai 15 ans ou plus (ou l'accord d'un parent). Je peux me désinscrire à tout moment. <a href="#donnees">Mes données</a></span></label>
+    <button class="btn" id="go" type="submit">Je m'inscris</button>
+    <div class="msg" id="msg" role="status" aria-live="polite"></div>
+    <p class="small">Tu ne paies rien pour t'inscrire. Pas de spam.</p>
+  </form>
+</header>
+
+<section>
+  <h2>Ce que Cap fera pour toi</h2>
+  <p class="sub">29 domaines de vie, un seul endroit.</p>
+  <div class="grid">
+    <div class="card"><span class="e">🌟</span><div><h3>Un Grand Cap</h3><p>Ton objectif de vie, découpé en chapitres, avec une mission du jour qui te rapproche.</p></div></div>
+    <div class="card"><span class="e">⚡</span><div><h3>Missions, XP et boss</h3><p>Chaque action rapporte de l'XP. Séries, quêtes du jour et boss à vaincre.</p></div></div>
+    <div class="card"><span class="e">😴</span><div><h3>Un sommeil suivi</h3><p>Cadran de coucher, mode nuit, score, régularité. Tu notes tes heures : Cap ne mesure pas ton sommeil.</p></div></div>
+    <div class="card"><span class="e">🛡️</span><div><h3>Arrêter sans jugement</h3><p>Un plan, un compteur de jours propres et un bouton SOS pour les envies. Ne remplace pas un suivi médical.</p></div></div>
+    <div class="card"><span class="e">🧩</span><div><h3>Protocoles et défis</h3><p>15 protocoles prêts à l'emploi et 9 défis, du matin de champion au 75 Hard.</p></div></div>
+    <div class="card"><span class="e">🐲</span><div><h3>Un héros qui évolue</h3><p>12 formes à débloquer au fil de tes niveaux, de Capito à Maxximus.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Ton héros évolue</h2>
+  <p class="sub">Plus tu progresses, plus il change.</p>
+  <div class="forms" aria-label="Quelques formes du héros"><div class="form"><div class="fs"><svg class="mascot " data-sz="120" data-cls="" data-mood="happy" data-base="happy" data-fm="capito" style="width:120px;height:124px;max-width:none;overflow:visible" viewBox="0 0 120 124" aria-hidden="true"><g class="m-root"><ellipse cx="44" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><ellipse cx="76" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><g class="m-ant"><path d="M60 1 71 23 60 17 49 23z" fill="#fff"/></g><rect x="10" y="16" width="100" height="98" rx="38" fill="url(#lg)"/><ellipse cx="60" cy="38" rx="32" ry="13" fill="#fff" opacity=".13"/><g class="m-arm l" style="transform:rotate(10deg)"><ellipse cx="9" cy="90" rx="8" ry="12.5" fill="#7A55F7"/></g><g class="m-arm r" style="transform:rotate(-10deg)"><ellipse cx="111" cy="90" rx="8" ry="12.5" fill="#7A55F7"/></g><g class="m-eyes"><circle cx="42" cy="62" r="12" fill="#fff"/><circle cx="78" cy="62" r="12" fill="#fff"/><g class="m-pupil"><circle cx="44" cy="64" r="6" fill="#1B1646"/><circle cx="80" cy="64" r="6" fill="#1B1646"/><circle cx="46" cy="61" r="2.2" fill="#fff"/><circle cx="82" cy="61" r="2.2" fill="#fff"/></g></g><circle cx="26" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><circle cx="94" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><path class="m-mouth" d="M48 82q12 12 24 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g></svg></div><b>Capito</b><small>Niv. 1</small></div><div class="form"><div class="fs"><svg class="mascot " data-sz="120" data-cls="" data-mood="happy" data-base="happy" data-fm="ailor" style="width:120px;height:124px;max-width:none;overflow:visible" viewBox="0 0 120 124" aria-hidden="true"><g class="m-root"><path d="M16 66 C-26 58 -38 24 -34 -2 C-8 8 8 26 18 46Z" fill="#fff" stroke="#9DB6F2" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 76 C-14 78 -28 60 -26 42 C-8 46 8 58 16 68Z" fill="#DCE8FF" stroke="#9DB6F2" stroke-width="2.5" stroke-linejoin="round"/><g style="transform-box:view-box;transform-origin:0 0" transform="translate(120 0) scale(-1 1)"><path d="M16 66 C-26 58 -38 24 -34 -2 C-8 8 8 26 18 46Z" fill="#fff" stroke="#9DB6F2" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 76 C-14 78 -28 60 -26 42 C-8 46 8 58 16 68Z" fill="#DCE8FF" stroke="#9DB6F2" stroke-width="2.5" stroke-linejoin="round"/></g><ellipse cx="44" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><ellipse cx="76" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><g class="m-ant"><ellipse cx="60" cy="5" rx="24" ry="7" fill="none" stroke="#FFD36B" stroke-width="4.5"/></g><rect x="10" y="16" width="100" height="98" rx="38" fill="url(#lg-sky)"/><ellipse cx="60" cy="38" rx="32" ry="13" fill="#fff" opacity=".13"/><g class="m-arm l" style="transform:rotate(10deg)"><ellipse cx="9" cy="90" rx="8" ry="12.5" fill="#7DB7FF"/></g><g class="m-arm r" style="transform:rotate(-10deg)"><ellipse cx="111" cy="90" rx="8" ry="12.5" fill="#7DB7FF"/></g><g class="m-eyes"><circle cx="42" cy="62" r="12" fill="#fff"/><circle cx="78" cy="62" r="12" fill="#fff"/><g class="m-pupil"><circle cx="44" cy="64" r="6" fill="#1B1646"/><circle cx="80" cy="64" r="6" fill="#1B1646"/><circle cx="46" cy="61" r="2.2" fill="#fff"/><circle cx="82" cy="61" r="2.2" fill="#fff"/></g></g><circle cx="26" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><circle cx="94" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><path class="m-mouth" d="M48 82q12 12 24 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g></svg></div><b>Ailor</b><small>Niv. 8</small></div><div class="form"><div class="fs"><svg class="mascot " data-sz="120" data-cls="" data-mood="happy" data-base="happy" data-fm="nebulor" style="width:120px;height:124px;max-width:none;overflow:visible" viewBox="0 0 120 124" aria-hidden="true"><g class="m-root"><path d="M-10 74 Q60 46 130 58" fill="none" stroke="#FFD36B" stroke-width="4" stroke-linecap="round" opacity=".7"/><ellipse cx="44" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><ellipse cx="76" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><g class="m-ant"><path d="M34 24 C22 12 26 -4 40 -10 C34 2 38 12 48 18Z" fill="#FFD36B"/><path d="M86 24 C98 12 94 -4 80 -10 C86 2 82 12 72 18Z" fill="#FFD36B"/></g><rect x="10" y="16" width="100" height="98" rx="38" fill="url(#lg-nebula)"/><ellipse cx="60" cy="38" rx="32" ry="13" fill="#fff" opacity=".13"/><circle cx="26" cy="38" r="2.4" fill="#fff"/><circle cx="92" cy="30" r="2" fill="#fff"/><circle cx="100" cy="66" r="2.6" fill="#fff"/><circle cx="18" cy="96" r="2" fill="#fff"/><circle cx="84" cy="104" r="2.4" fill="#fff"/><path d="M40 28 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#FFE9A8"/><path d="M-10 74 Q60 100 130 58" fill="none" stroke="#FFD36B" stroke-width="4" stroke-linecap="round"/><g class="m-arm l" style="transform:rotate(10deg)"><ellipse cx="9" cy="90" rx="8" ry="12.5" fill="#6A33C9"/></g><g class="m-arm r" style="transform:rotate(-10deg)"><ellipse cx="111" cy="90" rx="8" ry="12.5" fill="#6A33C9"/></g><g class="m-eyes"><circle cx="42" cy="62" r="12" fill="#fff"/><circle cx="78" cy="62" r="12" fill="#fff"/><g class="m-pupil"><circle cx="44" cy="64" r="6" fill="#1B1646"/><circle cx="80" cy="64" r="6" fill="#1B1646"/><circle cx="46" cy="61" r="2.2" fill="#fff"/><circle cx="82" cy="61" r="2.2" fill="#fff"/></g></g><circle cx="26" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><circle cx="94" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><path class="m-mouth" d="M48 82q12 12 24 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g></svg></div><b>Nébulor</b><small>Niv. 20</small></div><div class="form"><div class="fs"><svg class="mascot " data-sz="120" data-cls="" data-mood="happy" data-base="happy" data-fm="maxximus" style="width:120px;height:124px;max-width:none;overflow:visible" viewBox="0 0 120 124" aria-hidden="true"><g class="m-root"><circle cx="60" cy="62" r="76" fill="url(#corona)"/><g class="m-aura"><path d="M60 62 L151.5 52.8 L151.5 71.2Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L146.5 93.4 L138.5 110.0Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L124.3 127.8 L109.9 139.3Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L89.3 149.2 L71.4 153.3Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L48.6 153.3 L30.7 149.2Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L10.1 139.3 L-4.3 127.8Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L-18.5 110.0 L-26.5 93.4Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L-31.5 71.2 L-31.5 52.8Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L-26.5 30.6 L-18.5 14.0Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L-4.3 -3.8 L10.1 -15.3Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L30.7 -25.2 L48.6 -29.3Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L71.4 -29.3 L89.3 -25.2Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L109.9 -15.3 L124.3 -3.8Z" fill="#FFD36B" opacity=".28"/><path d="M60 62 L138.5 14.0 L146.5 30.6Z" fill="#FFD36B" opacity=".28"/></g><circle class="m-orb" cx="-14" cy="34" r="7" fill="#FFD36B"/><circle class="m-orb o2" cx="134" cy="46" r="6" fill="#FF8AC4"/><circle class="m-orb o3" cx="-6" cy="100" r="5" fill="#7BE0FF"/><ellipse cx="44" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><ellipse cx="76" cy="117" rx="14" ry="6" fill="#2B1F9E" opacity=".55"/><g class="m-ant"><path d="M26 28 L30 -2 L45 13 L60 -12 L75 13 L90 -2 L94 28Z" fill="#FFE27A" stroke="#C98A00" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="8" r="4.2" fill="#FF4D8D"/><circle cx="38" cy="16" r="3.2" fill="#4DD0FF"/><circle cx="82" cy="16" r="3.2" fill="#35E0A1"/></g><rect x="10" y="16" width="100" height="98" rx="38" fill="url(#lg-maxx)"/><ellipse cx="60" cy="38" rx="32" ry="13" fill="#fff" opacity=".13"/><path d="M60 96 L69 105 L60 116 L51 105Z" fill="#fff" opacity=".92"/><g class="m-arm l" style="transform:rotate(10deg)"><ellipse cx="9" cy="90" rx="8" ry="12.5" fill="#FF9A5A"/></g><g class="m-arm r" style="transform:rotate(-10deg)"><ellipse cx="111" cy="90" rx="8" ry="12.5" fill="#FF9A5A"/></g><g class="m-eyes"><circle cx="42" cy="62" r="12" fill="#fff"/><circle cx="78" cy="62" r="12" fill="#fff"/><g class="m-pupil"><circle cx="44" cy="64" r="6" fill="#1B1646"/><circle cx="80" cy="64" r="6" fill="#1B1646"/><circle cx="46" cy="61" r="2.2" fill="#fff"/><circle cx="82" cy="61" r="2.2" fill="#fff"/></g></g><circle cx="26" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><circle cx="94" cy="83" r="7" fill="#FF8FB1" opacity="0.6"/><path class="m-mouth" d="M48 82q12 12 24 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g></svg></div><b>Maxximus</b><small>Niv. 40</small></div></div>
+</section>
+
+<section>
+  <h2>Questions</h2>
+  <details><summary>Quand ouvre la bêta ?</summary><p>Il n'y a pas encore de date. Tu seras prévenu(e) par e-mail dès l'ouverture.</p></details>
+  <details><summary>C'est gratuit ?</summary><p>S'inscrire à la liste d'attente ne coûte rien. Les conditions d'utilisation de l'app (gratuite ou payante) seront annoncées avant l'ouverture, et tu ne paieras jamais sans le savoir.</p></details>
+  <details><summary>Pour quel âge ?</summary><p>Cap adapte son interface selon l'âge (enfant, ado, adulte, 60 ans et plus). Pour t'inscrire à cette liste, il faut avoir 15 ans ou plus, ou l'accord d'un parent.</p></details>
+  <details><summary>Est-ce un outil médical ?</summary><p>Non. Cap est un outil de motivation et de suivi personnel. Il ne remplace pas l'avis d'un médecin ou d'un professionnel, surtout pour le sevrage.</p></details>
+  <div class="cta2"><a class="btn" href="#top" onclick="document.getElementById('email').focus();return false;">Rejoindre la liste d'attente</a></div>
+</section>
+
+<footer id="donnees">
+  <h3>Mes données</h3>
+  <p><b>Responsable :</b> {{EDITEUR}} · <b>Contact :</b> <a href="mailto:{{CONTACT}}">{{CONTACT}}</a></p>
+  <p>Nous collectons ton adresse e-mail, la date d'inscription et l'origine du lien (par exemple « tiktok »), uniquement pour te prévenir de l'ouverture de la bêta de Cap. Base légale : ton consentement. Durée de conservation : jusqu'à 12 mois après l'ouverture de la bêta, ou jusqu'à ta demande de suppression.</p>
+  <p>Les données sont stockées chez Supabase (société américaine) sur des serveurs situés à Paris. Le site est hébergé par Vercel, qui peut conserver des journaux techniques de connexion. Cette page n'utilise aucun cookie de suivi ni outil de mesure d'audience.</p>
+  <p>Tu peux demander l'accès, la rectification ou la suppression de tes données, t'opposer à leur traitement ou retirer ton consentement à tout moment en écrivant à {{CONTACT}}. Tu peux aussi saisir la CNIL (cnil.fr).</p>
+  <h3>Mentions légales</h3>
+  <p>Éditeur : {{EDITEUR}} · Contact : {{CONTACT}} · Hébergement du site : Vercel Inc. (vercel.com) · Base de données : Supabase (supabase.com).</p>
+  <h3>Besoin d'aide ?</h3>
+  <p>Tabac info service 39 89 · Alcool info service 0 980 980 930 · Drogues info service 0 800 23 13 13 · Joueurs info service 09 74 75 13 13 · 3114 (prévention du suicide, 24 h/24).</p>
+</footer>
+</main>
+<script>
+(function(){
+var URL_='https://qsdedqdzmdxxvgxbgfim.supabase.co',KP='sb_publishable_WktvxEiwRXC8ilefwy80cA_c9tV6X-s',KA='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzZGVkcWR6bWR4eHZneGJnZmltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEyOTg2OTksImV4cCI6MjEwNjg3NDY5OX0.h10ildI9QVXhI9MrdmstTzxH70BLqOQVicXu0um5zpw',t0=Date.now(),done=false,busy=false;
+var f=document.getElementById('wl'),em=document.getElementById('email'),ck=document.getElementById('consent'),go=document.getElementById('go'),msg=document.getElementById('msg'),hp=document.getElementById('website');
+var q=new URLSearchParams(location.search),src=(q.get('src')||q.get('utm_source')||'direct').toLowerCase().replace(/[^a-z0-9_-]/g,'').slice(0,40)||'direct';
+function say(t,c){msg.textContent=t;msg.className='msg '+(c||'')}
+function post(key,legacy){
+  var h={'apikey':key,'Content-Type':'application/json','Prefer':'return=minimal'};
+  if(legacy)h['Authorization']='Bearer '+key;
+  return fetch(URL_+'/rest/v1/waitlist',{method:'POST',headers:h,body:JSON.stringify({email:em.value.trim().toLowerCase(),consent:true,source:src})});
+}
+f.addEventListener('submit',function(e){
+  e.preventDefault();if(busy||done)return;
+  var v=em.value.trim();
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)||v.length>254){say('Entre une adresse e-mail valide.','err');em.focus();return}
+  if(!ck.checked){say('Coche la case pour confirmer ton accord.','err');ck.focus();return}
+  if(hp.value){done=true;say('C\'est noté ! Tu seras prévenu(e) de l\'ouverture. ✅','ok');return}
+  busy=true;go.disabled=true;go.textContent='Envoi…';say('');
+  post(KP,false).then(function(r){
+    if(r.status===401||r.status===403)return post(KA,true);
+    return r;
+  }).then(function(r){
+    if(r.status===201||r.status===200||r.status===204){done=true;say('C\'est noté ! Tu seras prévenu(e) de l\'ouverture. ✅','ok');go.textContent='Inscrit(e) ✓';f.reset()}
+    else if(r.status===409){done=true;say('Tu es déjà inscrit(e). On te prévient très bientôt ✅','ok');go.textContent='Déjà inscrit(e) ✓'}
+    else{say('Oups, l\'inscription n\'a pas fonctionné. Réessaie dans un instant.','err');go.disabled=false;go.textContent='Je m\'inscris'}
+  }).catch(function(){say('Connexion impossible. Vérifie ton réseau et réessaie.','err');go.disabled=false;go.textContent='Je m\'inscris'}).then(function(){busy=false});
+});
+})();
+</script>
+</body>
+</html>
